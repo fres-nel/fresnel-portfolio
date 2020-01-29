@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <div id="bg"></div>
 
     <!-- Navigation -->
     <v-navigation-drawer
@@ -57,3 +58,15 @@ export default {
   }),
 };
 </script>
+
+<style scoped>
+  #bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("assets/img/white-wood.jpg") repeat center center;
+    opacity: 50%;
+  }
+</style>
