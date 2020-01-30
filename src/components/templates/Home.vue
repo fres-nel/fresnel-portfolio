@@ -35,7 +35,7 @@
           >
 
             <v-card-title class="pa-1 align-center justify-center card_border">
-              <v-icon large color="orange darken-3">account_box</v-icon>
+              <v-icon large color="orange">mdi-account</v-icon>
               <h2>About me</h2>
             </v-card-title>
             <v-row
@@ -68,15 +68,23 @@
           <skill-sets />
         </v-lazy>
       </v-col>
+
+      <!-- Works -->
+      <v-col cols="12">
+        <v-lazy>
+          <Accounts />
+        </v-lazy>
+      </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
   import SkillSets from "@/components/organisms/SkillSets";
+  import Accounts from "@/components/organisms/Accounts";
   export default {
     name: "Home",
-    components: {SkillSets}
+    components: {Accounts, SkillSets}
   }
 </script>
 

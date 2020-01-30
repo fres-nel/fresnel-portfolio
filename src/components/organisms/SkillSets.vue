@@ -5,7 +5,7 @@
       class="mx-auto"
   >
     <v-card-title class="pa-1 align-center justify-center card_border">
-      <v-icon large color="teal darken-3">assessment</v-icon>
+      <v-icon large color="teal">mdi-chart-bar</v-icon>
       <h2>Skill sets</h2>
     </v-card-title>
     <v-card-text>
