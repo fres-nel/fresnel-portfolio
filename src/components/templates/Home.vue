@@ -64,34 +64,23 @@
 
       <!-- Skill Sets -->
       <v-col cols="12">
-        <v-fade-transition>
-          <v-card
-              elevation="12"
-              max-width="800"
-              class="mx-auto"
-          >
-            <v-card-title class="pa-1 align-center justify-center card_border">
-              <v-icon large color="teal darken-3">assessment</v-icon>
-              <h2>Skill sets</h2>
-            </v-card-title>
-          </v-card>
-        </v-fade-transition>
+        <v-lazy>
+          <skill-sets />
+        </v-lazy>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
+  import SkillSets from "@/components/organisms/SkillSets";
   export default {
-    name: "Home"
+    name: "Home",
+    components: {SkillSets}
   }
 </script>
 
 <style scoped>
-  h2 {
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
-  }
-
   #top-icon {
     margin-bottom: 60px;
   }
