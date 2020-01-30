@@ -42,7 +42,7 @@
                 align="start"
                 justify="center"
             >
-              <!-- 画像サイズおよびcol数のレスポンシブ対応 -->
+              <!-- TODO 画像サイズおよびcol数のレスポンシブ対応 -->
               <v-col cols="3" class="pa-3">
                 <!-- TODO なんか画像を左右の真ん中にできん -->
                 <v-avatar tile size="150" class="mx-auto">
