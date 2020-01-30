@@ -7,23 +7,23 @@
       <v-col cols="12">
         <!-- Top Icon? -->
         <v-fade-transition mode="out-in">
-        <v-card
-            elevation="12"
-            max-width="500"
-            id="top-icon"
-            class="mx-auto"
-        >
-          <!-- TODO アイコン差し替え -->
-          <v-img
-              max-width="200"
-              max-height="200"
-              :src="require('@/assets/logo.png')"
+          <v-card
+              elevation="12"
+              max-width="500"
+              id="top-icon"
               class="mx-auto"
-          />
-          <v-card-title class="justify-center">
-            Welcome my homepage!
-          </v-card-title>
-        </v-card>
+          >
+            <!-- TODO アイコン差し替え -->
+            <v-img
+                max-width="200"
+                max-height="200"
+                :src="require('@/assets/logo.png')"
+                class="mx-auto"
+            />
+            <v-card-title class="justify-center">
+              Welcome my homepage!
+            </v-card-title>
+          </v-card>
         </v-fade-transition>
 
         <!-- About me -->
@@ -31,7 +31,7 @@
           <v-card
               elevation="12"
               max-width="800"
-              class="mx-auto rotate"
+              class="mx-auto"
           >
 
             <v-card-title class="pa-1 align-center justify-center card_border">
@@ -61,6 +61,22 @@
           </v-card>
         </v-fade-transition>
       </v-col>
+
+      <!-- Skill Sets -->
+      <v-col cols="12">
+        <v-fade-transition>
+          <v-card
+              elevation="12"
+              max-width="800"
+              class="mx-auto"
+          >
+            <v-card-title class="pa-1 align-center justify-center card_border">
+              <v-icon large color="teal darken-3">assessment</v-icon>
+              <h2>Skill sets</h2>
+            </v-card-title>
+          </v-card>
+        </v-fade-transition>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -81,7 +97,7 @@
   }
 
   .v-card {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     padding: 10px;
   }
 
@@ -90,10 +106,14 @@
   }
 
   .rotate {
-    transform:rotateZ(-3deg);
+    transform: rotateZ(-3deg);
   }
 
-  .card_border{
+  .rev-rotate {
+    transform: rotateZ(2deg);
+  }
+
+  .card_border {
     /*border-bottom: #888888 1px solid;*/
   }
 
